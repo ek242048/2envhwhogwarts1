@@ -35,8 +35,8 @@ public class Gryffindor  extends Hogwarts{
     public void compareGryffindors (Gryffindor[]gryffindors) {
         int totalScore = nobility + honor + brave;
         for (int i = 0; i < gryffindors.length; i++) {
+            System.out.println(totalScore);
         }
-        System.out.println(totalScore);
     }
 
 
