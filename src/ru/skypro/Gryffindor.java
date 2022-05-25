@@ -32,18 +32,17 @@ public class Gryffindor  extends Hogwarts{
                 ", храбрость=" + brave ;
     }
 
-    public static void compareGryffindors(Gryffindor a, Gryffindor b, Gryffindor c) {
+    public static void compareGryffindors(Gryffindor a, Gryffindor b) {
         int aTotalScore = a.getNobility() + a.getHonor() + a.getBrave();
         int bTotalScore = b.getNobility() + b.getHonor() + b.getBrave();
-        int cTotalScore = c.getNobility() + c.getHonor() + c.getBrave();
 
-        if ( aTotalScore > bTotalScore && aTotalScore > cTotalScore ) {
-            System.out.println(a.getName() + " " + a.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + aTotalScore);
+        if ( aTotalScore > bTotalScore ) {
+            System.out.println(a.getName() + " " + a.getSurname() + " - лучший гриффиндорец, чем " + b.getName() + " " + b.getSurname() + "!!! Общий балл - " + aTotalScore);
         } else {
-            if(bTotalScore > aTotalScore && bTotalScore > cTotalScore) {
-                System.out.println(b.getName() + " " + b.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + bTotalScore);
+            if(bTotalScore > aTotalScore) {
+                System.out.println(b.getName() + " " + b.getSurname() + " - лучший гриффиндорец, чем " + a.getName() + " " + a.getSurname() + "!!! Общий балл - " + bTotalScore);
             } else {
-                System.out.println(c.getName() + " " + c.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + cTotalScore);
+                System.out.println("Гриффиндорцы " + a.getName() + " " + a.getSurname() + " и " + b.getName() +" " +b.getSurname() + "равны в своих качествах");
             }
 
         }

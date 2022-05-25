@@ -66,18 +66,17 @@ public class Slytherin extends Hogwarts{
                 ", жажда власти=" + lustOfPower;
     }
 
-    public static void compareSlytherins(Slytherin a, Slytherin b, Slytherin c) {
+    public static void compareSlytherins(Slytherin a, Slytherin b) {
         int aTotalScore = a.getTrick() + a.getDetermination() + a.getAmbition() + a.getResourcefulness() + a.getLustOfPower();
         int bTotalScore = b.getTrick() + b.getDetermination() + b.getAmbition() + b.getResourcefulness() + b.getLustOfPower();
-        int cTotalScore = c.getTrick() + c.getDetermination() + c.getAmbition() + c.getResourcefulness() + c.getLustOfPower();
 
-        if ( aTotalScore > bTotalScore && aTotalScore > cTotalScore ) {
-            System.out.println(a.getName() + " " + a.getSurname() + " - лучший ученик факультета Слизерин!!! Общий балл - " + aTotalScore);
+        if ( aTotalScore > bTotalScore ) {
+            System.out.println(a.getName() + " " + a.getSurname() + " - лучший слизеринец, чем " + b.getName() + " " + b.getSurname()+ "!!! Общий балл - " + aTotalScore);
         } else {
-            if(bTotalScore > aTotalScore && bTotalScore > cTotalScore) {
-                System.out.println(b.getName() + " " + b.getSurname() + " - лучший ученик факультета Слизерин!!! Общий балл - " + bTotalScore);
+            if(bTotalScore > aTotalScore ) {
+                System.out.println(b.getName() + " " + b.getSurname() + " - лучший слизеринец, чем" + a.getName() + " " + a.getSurname() + "!!! Общий балл - " + bTotalScore);
             } else {
-                System.out.println(c.getName() + " " + c.getSurname() + " - лучший ученик факультета Слизерин!!! Общий балл - " + cTotalScore);
+                System.out.println("Ученики факультета Слизерин " + a.getName() + " " + a.getSurname() + " и " + b.getName() + " " + b.getSurname() + "равны");
             }
 
         }

@@ -15,6 +15,9 @@ public class Hogwarts {
         this.transgression = transgression;
     }
 
+    public static void printStudent(Gryffindor harryPotter) {
+    }
+
     public String getName() {
         return name;
     }
@@ -40,6 +43,10 @@ public class Hogwarts {
         return  "" + name + " " + surname + ": факультет - " + faculty +
                 ", способность колдовать=" + magic +
                 ", трансгрессия=" + transgression;
+    }
+
+    public void printStudent () {
+        System.out.println(this);
     }
 
     public static void print(Hogwarts[] hogwartsStudents) {

@@ -44,18 +44,17 @@ public class Hufflepuff extends Hogwarts{
                 ", честность=" + honesty;
     }
 
-    public static void compareHufflepuffs(Hufflepuff a, Hufflepuff b, Hufflepuff c) {
+    public static void compareHufflepuffs(Hufflepuff a, Hufflepuff b) {
         int aTotalScore = a.getDiligense() + a.getLoyalty() + a.getHonesty();
         int bTotalScore = b.getDiligense() + b.getLoyalty() + b.getHonesty();
-        int cTotalScore = c.getDiligense() + c.getLoyalty() + c.getHonesty();
 
-        if ( aTotalScore > bTotalScore && aTotalScore > cTotalScore ) {
-            System.out.println(a.getName() + " " + a.getSurname() + " - лучший ученик Пуффендуя!!! Общий балл - " + aTotalScore);
+        if ( aTotalScore > bTotalScore ) {
+            System.out.println(a.getName() + " " + a.getSurname() + " - лучший ученик Пуффендуя, чем " + b.getName() + " " + b.getSurname() + "!!! Общий балл - " + aTotalScore);
         } else {
-            if(bTotalScore > aTotalScore && bTotalScore > cTotalScore) {
-                System.out.println(b.getName() + " " + b.getSurname() + " - лучший ученик Пуффендуя!!! Общий балл - " + bTotalScore);
+            if(bTotalScore > aTotalScore ) {
+                System.out.println(b.getName() + " " + b.getSurname() + " - лучший ученик Пуффендуя, чем " + a.getName() + " " + a.getSurname() + "!!! Общий балл - " + bTotalScore);
             } else {
-                System.out.println(c.getName() + " " + c.getSurname() + " - лучший ученик Пуффендуя!!! Общий балл - " + cTotalScore);
+                System.out.println("Ученики факультета Пуффендуй " + a.getName() + " " + a.getSurname() + " и " + b.getName() + " " + b.getSurname() + "равны");
             }
 
         }

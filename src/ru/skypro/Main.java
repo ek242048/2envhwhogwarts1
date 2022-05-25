@@ -66,16 +66,19 @@ public class Main {
         Hogwarts.print(slytherins);
 
         printSeparator("ЛУЧШИЕ УЧЕНИКИ ФАКУЛЬТЕТОВ");
-        Gryffindor.compareGryffindors(harryPotter,hermione,ron);
-        Hufflepuff.compareHufflepuffs(zaccary,cedrick,justin);
-        Ravenclaw.compareRavenclaws(chjoy,padme,marcus);
-        Slytherin.compareSlytherins(draco,grehem,gregory);
+        Gryffindor.compareGryffindors(harryPotter,hermione);
+        Gryffindor.compareGryffindors(hermione,ron);
+        Hufflepuff.compareHufflepuffs(zaccary,cedrick);
+        Ravenclaw.compareRavenclaws(chjoy,marcus);
+        Slytherin.compareSlytherins(draco,gregory);
 
         printSeparator("СРАВНЕНИЕ УЧЕНИКОВ ХОГВАРТСА");
 
         Hogwarts.compareStudens(harryPotter,draco);
         Hogwarts.compareStudens(ron,padme);
         Hogwarts.compareStudens(gregory,harryPotter);
+
+        Hogwarts.printStudent (harryPotter);
 
 
     }
