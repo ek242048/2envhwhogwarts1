@@ -32,11 +32,22 @@ public class Gryffindor  extends Hogwarts{
                 ", храбрость=" + brave ;
     }
 
-    public void compareGryffindors (Gryffindor[]gryffindors) {
-        int totalScore = nobility + honor + brave;
-        for (int i = 0; i < gryffindors.length; i++) {
-            System.out.println(totalScore);
+    public static void compareGryffindors(Gryffindor a, Gryffindor b, Gryffindor c) {
+        int aTotalScore = a.getNobility() + a.getHonor() + a.getBrave();
+        int bTotalScore = b.getNobility() + b.getHonor() + b.getBrave();
+        int cTotalScore = c.getNobility() + c.getHonor() + c.getBrave();
+
+        if ( aTotalScore > bTotalScore && aTotalScore > cTotalScore ) {
+            System.out.println(a.getName() + " " + a.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + aTotalScore);
+        } else {
+            if(bTotalScore > aTotalScore && bTotalScore > cTotalScore) {
+                System.out.println(b.getName() + " " + b.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + bTotalScore);
+            } else {
+                System.out.println(c.getName() + " " + c.getSurname() + " - лучший гриффиндорец!!! Общий балл - " + cTotalScore);
+            }
+
         }
+
     }
 
 
