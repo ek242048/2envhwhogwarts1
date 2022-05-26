@@ -47,6 +47,11 @@ public class Gryffindor  extends Hogwarts{
 
         }
 
+
+    }
+
+    public void printStudent () {
+        System.out.println(this);
     }
 
 

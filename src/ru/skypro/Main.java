@@ -78,9 +78,14 @@ public class Main {
         Hogwarts.compareStudens(ron,padme);
         Hogwarts.compareStudens(gregory,harryPotter);
 
-        Hogwarts.printStudent (harryPotter);
+
+        harryPotter.printStudent();
 
 
+    }
+
+    public void printStudent () {
+        System.out.println(this);
     }
 
     public static void printSeparator (String text) {

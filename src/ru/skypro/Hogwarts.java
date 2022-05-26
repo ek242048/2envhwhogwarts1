@@ -46,7 +46,7 @@ public class Hogwarts {
     }
 
     public void printStudent () {
-        System.out.println(this);
+        System.out.println(this.toString());
     }
 
     public static void print(Hogwarts[] hogwartsStudents) {
